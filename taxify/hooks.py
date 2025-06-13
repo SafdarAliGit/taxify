@@ -124,6 +124,12 @@ app_license = "MIT"
 # 	}
 # }
 
+doc_events = {
+	"*": {
+		"before_submit": "taxify.overrides.srb_invoice.custom_before_submit",
+	}
+}
+
 # Scheduled Tasks
 # ---------------
 

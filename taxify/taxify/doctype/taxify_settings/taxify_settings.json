@@ -1,0 +1,143 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-06-13 13:13:43.505925",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "pos_id",
+  "business_name",
+  "invoice_type",
+  "ntn",
+  "api_url",
+  "pos_user",
+  "column_break_1nems",
+  "pos_pass",
+  "default_consumer_name",
+  "default_address",
+  "extra_info",
+  "tariff_code",
+  "target_doctype",
+  "target_fieldname"
+ ],
+ "fields": [
+  {
+   "fieldname": "pos_id",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "POS ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "business_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Business Name",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "description": "1-Sales Invoice\n2-Purchase Invoice\n3-Debit Note\n4-Credit Note",
+   "fieldname": "invoice_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Invoice Type",
+   "options": "1\n2\n3\n4",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ntn",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "NTN",
+   "reqd": 1
+  },
+  {
+   "default": "http://apps.srb.gos.pk/PoSService/CloudSalesInvoiceService",
+   "fieldname": "api_url",
+   "fieldtype": "Data",
+   "label": "API URL",
+   "reqd": 1
+  },
+  {
+   "default": "N/A",
+   "fieldname": "default_consumer_name",
+   "fieldtype": "Data",
+   "label": "Default Consumer Name"
+  },
+  {
+   "default": "N/A",
+   "fieldname": "default_address",
+   "fieldtype": "Data",
+   "label": "Default Address"
+  },
+  {
+   "default": "N/A",
+   "fieldname": "extra_info",
+   "fieldtype": "Data",
+   "label": "Extra Info"
+  },
+  {
+   "default": "POS Invoice",
+   "fieldname": "target_doctype",
+   "fieldtype": "Link",
+   "label": "Target Doctype",
+   "options": "DocType",
+   "reqd": 1
+  },
+  {
+   "description": "Copy custom field name from Doctype for Invoice ID ",
+   "fieldname": "target_fieldname",
+   "fieldtype": "Data",
+   "label": "Target Fieldname",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_1nems",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "N/A",
+   "fieldname": "tariff_code",
+   "fieldtype": "Data",
+   "label": "Tariff Code"
+  },
+  {
+   "fieldname": "pos_user",
+   "fieldtype": "Data",
+   "label": "POS Username",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pos_pass",
+   "fieldtype": "Data",
+   "label": "POS Password",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-06-13 14:27:42.278557",
+ "modified_by": "Administrator",
+ "module": "Taxify",
+ "name": "Taxify Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
